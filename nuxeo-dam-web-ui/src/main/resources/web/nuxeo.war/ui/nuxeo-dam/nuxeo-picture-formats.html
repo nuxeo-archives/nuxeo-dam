@@ -58,9 +58,10 @@ limitations under the License.
           <span>[[item.dimensions]]</span>
           <span>[[item.size]]</span>
           <span>[[item.format]]</span>
-          <a href="[[item.data]]" title="download">
+          <a id="download-[[index]]" href="[[item.data]]">
             <iron-icon icon="nuxeo:download"></iron-icon>
           </a>
+          <paper-tooltip for="download-[[index]]">[[i18n('pictureViewLayout.download.tooltip')]]</paper-tooltip>
         </div>
       </template>
     </div>
