@@ -30,7 +30,7 @@ limitations under the License.
 
       label {
         opacity: .5;
-        width: 30%;
+        min-width: 30%;
         display: inline-block;
       }
 
@@ -38,11 +38,6 @@ limitations under the License.
         @apply(--layout-horizontal);
         @apply(--layout-flex);
         line-height: 1.5em;
-      }
-
-      .flex.actions {
-        text-align: right;
-        flex: 0.5;
       }
 
       iron-icon {
@@ -58,20 +53,18 @@ limitations under the License.
     <h3>[[label]]</h3>
     <div>
       <template is="dom-repeat" items="[[_getAdditionalFormats(document)]]" as="item">
-        <div class="item horizontal layout">
-          <label class="flex">[[item.name]]</label>
-          <span class="flex-2">[[item.dimensions]]</span>
-          <span class="flex">[[item.size]]</span>
-          <span class="flex">[[item.format]]</span>
-          <a class="flex actions" href="[[item.data]]" title="download">
+        <div class="item horizontal layout justified">
+          <label>[[item.name]]</label>
+          <span>[[item.dimensions]]</span>
+          <span>[[item.size]]</span>
+          <span>[[item.format]]</span>
+          <a href="[[item.data]]" title="download">
             <iron-icon icon="nuxeo:download"></iron-icon>
           </a>
         </div>
       </template>
     </div>
-
   </template>
-
 </dom-module>
 
 <script>

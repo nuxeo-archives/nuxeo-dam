@@ -37,26 +37,26 @@ limitations under the License. -->
         @apply(--layout-flex);
         padding-right: 1.3rem;
         padding-bottom: 1.3rem;
-        min-width: 256px;
+        min-width: 384px;
       }
     </style>
 
     <nuxeo-document-page document="[[document]]"></nuxeo-document-page>
 
     <div class="additional">
-      <nuxeo-card label="[[i18n('pictureViewLayout.info')]]">
+      <nuxeo-card heading="[[i18n('pictureViewLayout.info')]]">
         <nuxeo-picture-info role="widget" document="[[document]]"></nuxeo-picture-info>
       </nuxeo-card>
 
-      <nuxeo-card label="[[i18n('pictureViewLayout.formats')]]">
+      <nuxeo-card heading="[[i18n('pictureViewLayout.formats')]]">
         <nuxeo-picture-formats role="widget" document="[[document]]"></nuxeo-picture-formats>
       </nuxeo-card>
 
-      <nuxeo-card label="[[i18n('pictureViewLayout.exif')]]">
+      <nuxeo-card heading="[[i18n('pictureViewLayout.exif')]]">
         <nuxeo-picture-exif role="widget" document="[[document]]"></nuxeo-picture-exif>
       </nuxeo-card>
 
-      <nuxeo-card label="[[i18n('pictureViewLayout.iptc')]]">
+      <nuxeo-card heading="[[i18n('pictureViewLayout.iptc')]]">
         <nuxeo-picture-iptc role="widget" document="[[document]]"></nuxeo-picture-iptc>
       </nuxeo-card>
     </div>
